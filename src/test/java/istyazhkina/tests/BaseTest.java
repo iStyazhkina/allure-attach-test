@@ -29,6 +29,8 @@ public class BaseTest {
                 .screenshots(true)
                 .savePageSource(true));
 
+        Configuration.timeout = 60000;
+
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
